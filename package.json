@@ -1,6 +1,6 @@
 {
   "name": "fantasy-lenses",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Composable, immutable getters and setters.",
   "files": ["fantasy-lenses.js", "src/*.js"],
   "main": "fantasy-lenses.js",
