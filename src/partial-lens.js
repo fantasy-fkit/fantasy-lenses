@@ -29,7 +29,7 @@ PartialLens.prototype.andThen = function(b) {
 PartialLens.objectLens = function(property) {
     var totalLens = Lens.objectLens(property);
     return PartialLens(function(target) {
-        return property in target ? Option.Some(totalLens.run(target)) : Option.None;
+        return !!target && property in target ? Option.Some(totalLens.run(target)) : Option.None;
     });
 };
 PartialLens.arrayLens = function(index) {
