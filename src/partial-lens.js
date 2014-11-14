@@ -1,6 +1,6 @@
 var daggy = require('daggy'),
     C = require('fantasy-combinators'),
-    Option = require('fantasy-options'),
+    Option = require('fantasy-options').Option,
     Store = require('fantasy-stores'),
     Lens = require('./lens'),
     PartialLens = daggy.tagged('run');
